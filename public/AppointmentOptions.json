@@ -1,0 +1,148 @@
+[
+        {
+                "_id": 1,
+                "event": "Birthday",
+                "flowers": [
+                        "Gentian Violet",
+                        "Gardenia",
+                        "Gladiolus",
+                        "Gerbera",
+                        "Baby’s breath/ Gypsophila",
+                        "Lantana",
+                        "Mallow/ Lavatera",
+                        "Lavender",
+                        "Lilac",
+                        "Orchid",
+                        "Daffodil",
+                        "Rose",
+                        "Gerbera",
+                        "Orchid",
+                        "Carnation",
+                        "Peony",
+                        "Lily"
+                ]
+        },
+        {
+                "_id": 2,
+                "event": "Anniversary",
+                "flowers": [
+                        "Daffodil",
+                        "Pride of India",
+                        "Yoshino cherry",
+                        "Silk cotton tree flower",
+                        "Indian laburnum",
+                        "Rose",
+                        "Gerbera",
+                        "Orchid",
+                        "Carnation",
+                        "Peony",
+                        "Lily"
+                ]
+        },
+        {
+                "_id": 3,
+                "event": "Housewarming",
+                "flowers": [
+                        "Daffodil",
+                        "Rose",
+                        "Mallow/ Lavatera",
+                        "Lavender",
+                        "Lilac",
+                        "Orchid",
+                        "Gerbera",
+                        "Orchid",
+                        "Carnation",
+                        "Peony",
+                        "Lily"
+                ]
+        },
+        {
+                "_id": 4,
+                "event": "Valentine's Day",
+                "flowers": [
+                        "Bauhinia",
+                        "Sita Ashok flower",
+                        "Indian cork tree flower",
+                        "Cherry blossom",
+                        "Eastern redbud",
+                        "Delta blues vitex",
+                        "Daffodil",
+                        "Rose",
+                        "Gerbera",
+                        "Orchid",
+                        "Carnation",
+                        "Peony",
+                        "Lily"
+                ]
+        },
+        {
+                "_id": 5,
+                "event": "Baby Shower",
+                "flowers": [
+                        "Hollyhocks",
+                        "Caraway Herb",
+                        "Angelica",
+                        "Foxglove",
+                        "Evening primrose",
+                        "Daffodil",
+                        "Rose",
+                        "Gerbera",
+                        "Orchid",
+                        "Carnation",
+                        "Peony",
+                        "Lily"
+                ]
+        },
+        {
+                "_id": 6,
+                "event": "Bridal Shower",
+                "flowers": [
+                        "Peruvian Daylily",
+                        "Dropmore flower",
+                        "False Spirea",
+                        "Amaranthus/ Prince’s Feather",
+                        "Daffodil",
+                        "Rose",
+                        "Gerbera",
+                        "Orchid",
+                        "Carnation",
+                        "Peony",
+                        "Lily",
+                        "Petunia",
+                        "Cosmos",
+                        "Marigold"
+                ]
+        },
+        {
+                "_id": 7,
+                "event": "Get Well Soon",
+                "flowers": [
+                        "Zinnia",
+                        "Larkspur",
+                        "Daffodil",
+                        "Rose",
+                        "Gerbera",
+                        "Orchid",
+                        "Carnation",
+                        "Peony",
+                        "Lily"
+                ]
+        },
+        {
+                "_id": 8,
+                "event": "Graduation",
+                "flowers": [
+                        "Daffodil",
+                        "Calendula",
+                        "Geranium",
+                        "Snapdragon",
+                        "Impatiens",
+                        "Rose",
+                        "Gerbera",
+                        "Orchid",
+                        "Carnation",
+                        "Peony",
+                        "Lily"
+                ]
+        }
+]

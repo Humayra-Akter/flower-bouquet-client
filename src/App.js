@@ -5,6 +5,7 @@ import Appointment from './Pages/Appointment/Appointment';
 import ContactUs from './Pages/Contact/Contact';
 import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
+import Signup from './Pages/Login/Signup';
 import Reviews from './Pages/Reviews/Reviews';
 import Footer from './Pages/Shared/Footer';
 import Navbar from './Pages/Shared/Navbar';
@@ -20,6 +21,7 @@ function App() {
         <Route path="reviews" element={<Reviews />}></Route>
         <Route path="contact" element={<ContactUs />}></Route>
         <Route path="login" element={<Login />}></Route>
+        <Route path="signup" element={<Signup />}></Route>
       </Routes>
       <Footer></Footer>
     </div>

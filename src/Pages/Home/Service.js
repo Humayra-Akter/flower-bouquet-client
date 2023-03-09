@@ -3,7 +3,7 @@ import bg from '../../assets/images/banner.png'
 
 const Service = ({ service }) => {
         return (
-                <div class="card bg-gradient-to-b from-accent to-secondary shadow-xl p-2">
+                <div className="card bg-gradient-to-b from-accent to-secondary shadow-xl p-2">
                         <div
                                 style={{
                                         background: `url(${bg})`

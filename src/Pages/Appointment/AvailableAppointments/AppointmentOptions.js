@@ -10,7 +10,7 @@ const AppointmentOptions = ({ appointmentOption, setBouquet }) => {
                                 <p className='text-sm font-bold'>{flowers.length} {flowers.length > 1 ? 'flowers' : 'flower'} available.</p>
                                 <div className="card-actions mt-5 justify-center">
                                         <label
-                                                for="booking-modal"
+                                                htmlFor="booking-modal"
                                                 className='btn btn-sm w-1/2 font-bold text-sm border-accent border-2 uppercase text-pink-700 bg-gradient-to-l from-accent to-secondary'
                                                 onClick={() => setBouquet(appointmentOption)}
                                         >Book now</label>

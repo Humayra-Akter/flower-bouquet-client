@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import bg from '../../assets/images/bg.png'
 
 const ContactDemo = () => {
@@ -30,6 +31,12 @@ const ContactDemo = () => {
                                                 </div>
                                                 <div className="form-control mt-6">
                                                         <button className="btn font-bold text-lg border-secondary border-2 uppercase text-pink-700 bg-gradient-to-l from-accent to-secondary">Login</button>
+                                                </div>
+
+                                                <div className="divider text-xl font-bold text-pink-900">OR</div>
+                                                <div className="form-control mt-6">
+                                                        <button
+                                                                className="btn btn-md font-bold text-lg border-secondary border-2 uppercase text-pink-700 bg-gradient-to-l from-accent to-secondary"><Link className='text-pink-700 font-bold' to="/login">Login to account</Link></button>
                                                 </div>
                                         </div>
                                 </div>

@@ -2,16 +2,39 @@ import { format } from 'date-fns';
 import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
+import { toast } from 'react-toastify';
 
 const BookingModal = ({ bouquet, selectedDate, setBouquet }) => {
         const [user, loading, error] = useAuthState(auth);
+        const formattedDate = format(selectedDate, 'PP');
+        const { _id, event, flowers } = bouquet;
 
-        const { event, flowers } = bouquet;
         const handleBooking = e => {
                 e.preventDefault();
                 const flower = e.target.flower.value;
                 console.log(event, flower);
-                setBouquet(null);
+                const booking = {
+                        bouquetId: _id,
+                        bouquet: event,
+                        date: formattedDate,
+                        flowers,
+                        customer: user.email,
+                        customerName: user.displayName,
+                        phone: e.target.phone.value
+                }
+
+                fetch('http://localhost:5000/booking', {
+                        method: 'POST',
+                        headers: {
+                                'content-type': 'application/json'
+                        },
+                        body: JSON.stringify(booking)
+                })
+                        .then(res => res.json())
+                        .then(data => {
+                                setBouquet(null);
+                        })
+
         }
 
         return (

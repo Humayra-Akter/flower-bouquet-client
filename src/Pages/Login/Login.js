@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import bg from '../../assets/images/rosebg.png'
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init'
@@ -22,9 +22,11 @@ const Login = () => {
 
         let from = location.state?.from?.pathname || "/";
 
-        if (gUser || user) {
-                navigate(from, { replace: true });
-        }
+        useEffect(() => {
+                if (gUser || user) {
+                        navigate(from, { replace: true });
+                }
+        }, [user, gUser, navigate, from]);
 
         if (gLoading || loading) {
                 return <Loading></Loading>

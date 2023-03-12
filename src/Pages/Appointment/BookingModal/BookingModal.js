@@ -4,7 +4,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import { toast } from 'react-toastify';
 
-const BookingModal = ({ bouquet, selectedDate, setBouquet }) => {
+const BookingModal = ({ bouquet, selectedDate, setBouquet, refetch }) => {
         const [user, loading, error] = useAuthState(auth);
         const formattedDate = format(selectedDate, 'PP');
         const { _id, event, flowers } = bouquet;
@@ -39,6 +39,7 @@ const BookingModal = ({ bouquet, selectedDate, setBouquet }) => {
                                 else {
                                         toast.error(`Already have a booking on ${data.booking?.date} for ${data.booking?.flower}`)
                                 }
+                                refetch();
                                 setBouquet(null);
                         })
 

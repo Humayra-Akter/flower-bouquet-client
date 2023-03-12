@@ -32,6 +32,13 @@ const BookingModal = ({ bouquet, selectedDate, setBouquet }) => {
                 })
                         .then(res => res.json())
                         .then(data => {
+                                console.log(data);
+                                if (data.success) {
+                                        toast(`Booking is set ${formattedDate} for ${flower}`)
+                                }
+                                else {
+                                        toast.error(`Already have a booking on ${data.booking?.date} for ${data.booking?.flower}`)
+                                }
                                 setBouquet(null);
                         })
 

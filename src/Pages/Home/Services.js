@@ -1,8 +1,8 @@
 import React from 'react';
-import rose from '../../assets/icons/flower-marigolds-g4f7777987_640.png';
-import rose1 from '../../assets/icons/annotation-gf841dcdea_640.png';
-import rose2 from '../../assets/icons/lotus-gdd8b6cb35_640.png';
-import rose3 from '../../assets/icons/rose.png';
+import rose from '../../assets/icons/img1.png';
+import rose1 from '../../assets/icons/img2.png';
+import rose2 from '../../assets/icons/img3.png';
+import rose3 from '../../assets/icons/img4.png';
 import Service from './Service';
 
 const Services = () => {

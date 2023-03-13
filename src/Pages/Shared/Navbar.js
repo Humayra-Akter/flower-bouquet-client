@@ -16,6 +16,10 @@ const Navbar = () => {
                 <li><Link to="/about">About</Link></li>
                 <li><Link to="/reviews">Reviews</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
+                {
+                        user && <li><Link to="/dashboard">Dashboard</Link></li>
+
+                }
                 <li>{user ? <button onClick={logout} className="btn btn-ghost font-bold text-lg text-pink-700 uppercase">Signout</button> : <Link to="/login">Login</Link>}</li>
         </>
         return (
@@ -29,9 +33,9 @@ const Navbar = () => {
                                                 {menuItems}
                                         </ul>
                                 </div>
-                                <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+                                <a className="btn btn-ghost normal-case text-xl">Dream Bouquet</a>
                         </div>
-                        <div className="navbar-end hidden lg:flex">
+                        <div className="navbar hidden lg:flex">
                                 <ul className="menu menu-horizontal font-bold text-pink-700 uppercase px-1">
                                         {menuItems}
                                 </ul>

@@ -22,7 +22,7 @@ const BookingModal = ({ bouquet, selectedDate, setBouquet, refetch }) => {
                         customerName: user.displayName,
                         phone: e.target.phone.value
                 }
-
+                console.log(booking.customer);
                 fetch('http://localhost:5000/booking', {
                         method: 'POST',
                         headers: {

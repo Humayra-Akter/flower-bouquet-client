@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import rose from '../../assets/icons/img1.png';
 import rose1 from '../../assets/icons/img2.png';
 import rose2 from '../../assets/icons/img3.png';
@@ -44,6 +45,10 @@ const Services = () => {
                                                 service={service}
                                         ></Service>)
                                 }
+                        </div>
+                        <div className='pt-10 ml-3.5'>
+                                <h1 className='text-sm font-bold text-end pr-14 text-pink-700'>
+                                        <Link to='/appointment'>VIEW MORE...</Link></h1>
                         </div>
                 </div>
         );

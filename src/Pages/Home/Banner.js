@@ -8,7 +8,7 @@ import img4 from '../../assets/icons/img4.png';
 
 
 const Banner = () => {
-        
+
         return (
                 <div className='hero bg-pink-100 min-h-screen'>
                         <div>

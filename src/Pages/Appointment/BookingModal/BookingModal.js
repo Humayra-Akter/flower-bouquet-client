@@ -17,7 +17,7 @@ const BookingModal = ({ bouquet, selectedDate, setBouquet, refetch }) => {
                         bouquetId: _id,
                         bouquet: event,
                         date: formattedDate,
-                        flowers,
+                        flower,
                         customer: user.email,
                         customerName: user.displayName,
                         phone: e.target.phone.value
